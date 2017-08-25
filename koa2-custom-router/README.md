@@ -1,7 +1,12 @@
 # Koa2-custom-router
 
 ```
+# install dependencies
 yarn install
 
-node start.js
+# for development environment
+yarn start
+
+# for production environment
+yarn build && yarn server
 ```
