@@ -1,0 +1,23 @@
+{
+  "name": "koa2-sync-markdown-preview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js --exec babel-node --presets env"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-static": "3.0.0",
+    "koa-views": "5.2.1",
+    "marked": "^0.3.6",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "nodemon": "^1.12.1",
+    "opn": "^5.1.0"
+  }
+}
