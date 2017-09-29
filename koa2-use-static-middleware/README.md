@@ -8,5 +8,5 @@ yarn install
 yarn start
 
 # for production environment
-yarn build
+yarn build && yarn server
 ```
