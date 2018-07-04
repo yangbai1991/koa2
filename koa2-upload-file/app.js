@@ -5,7 +5,12 @@ import uploadFile from './util/uploadFile';
 
 const app = new Koa();
 
-app.use(koaBody({ multipart: true }));
+app.use(koaBody({
+  multipart: true,
+  formidable: {
+    maxFieldsSize: 20 * 1024 * 1024    // 设置上传文件大小最大限制，默认20M
+  }
+}));
 //app.use(uploadFile);
 
 app.use(async (ctx) => {
